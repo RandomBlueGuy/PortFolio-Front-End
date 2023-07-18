@@ -18,27 +18,36 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 1rem;
-  top: 1rem;
+  left: 2rem;
+  /* top: 1rem; */
   gap: 0.5rem;
   /* box-sizing: border-box; */
 }
 .nav__menu h1{
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 35px;
 }
 
-.nav__menu h1 span {
-  color: var(--NeonPink);
+.portfolio__title h1{
+  line-height: 0;
+  color: var(--NeonLightBlue);
+}
+
+.portfolio__title p{
+  line-height: 1;
+  font-size: 16px;
+  text-align: right;
 }
 
 .menu__subtitle {
   font-family: 'Rubik', sans-serif;
   font-weight: 200;
-  font-size: 50%;
+  font-size: 20px;
   padding: 0;
   padding-left: 1rem;
   position: relative;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .menu__subtitle::after {
