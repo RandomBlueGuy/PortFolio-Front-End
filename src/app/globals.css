@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400&family=Rubik:wght@300;500&display=swap');
 
 * {
+  /*COLOR PROMPTS*/
+  --DarkBG: rgb(6, 21, 36);
+  --NeonDarkBlue: #0b468c;
+  --NeonLightBlue: #3f97b2;
+  --NeonPink: #c14493;
+  /*---------------*/
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Jost', sans-serif;
-  font-size: 35PX;
+  font-size: 35px;
 }
 
 html,
@@ -19,8 +24,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  background-color: rgb(6, 21, 36);
+  background-color: var(--DarkBG);
+}
+
+button {
+  border: 3px solid var(--NeonLightBlue);
+  padding: 0.25rem 1rem;
+  background: linear-gradient(
+    to right,
+    var(--NeonLightBlue) 0%,
+    var(--NeonLightBlue) 50%,
+    transparent 50%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-position: 0 0;
+  color: black;
+}
+
+button:active{
+  scale: 0.95;
 }
 
 @media (prefers-color-scheme: dark) {
