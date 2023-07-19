@@ -8,23 +8,29 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.nav__menu}>
         <div className={styles.portfolio__title}>
-          <h1>
-            Andrés Vélez
-          </h1>
-          <p>FullStack Developer,</p>
-          <p>Audiovisual Communicator &</p>
-          <p>Professional <span style={{color: `var(--NeonLightBlue)`}}>Blue</span> Guy</p>
+          <h1>Andres Velez</h1>
+          <p>Front end developer, Audiovisual Communicator &</p>
+          <p></p>
+          <p>
+            Professional{" "}
+            <span style={{ color: `var(--NeonLightBlue)` }}>Blue</span> Guy
+          </p>
+        <div className={styles.menu__subgroup}>
+          <h2 className={styles.menu__subtitle}>About me</h2>
+          <h2 className={styles.menu__subtitle}>What I know</h2>
+          <h2 className={styles.menu__subtitle}>What I do</h2>
+          <h2 className={styles.menu__subtitle}>Contact me</h2>
         </div>
-        <h2 className={styles.menu__subtitle}>About me</h2>
-        <h2 className={styles.menu__subtitle}>What I know</h2>
-        <h2 className={styles.menu__subtitle}>What i do</h2>
-        <h2 className={styles.menu__subtitle}>Contact me</h2>
+        </div>
+
+
+        <p className={styles.copyright}>© All rights disabled</p>
       </section>
 
-      <div className={`${styles.description} ${styles.center}`}>
+      {/* <div className={`${styles.description} ${styles.center}`}>
         <p>C O M I N G&nbsp;&nbsp;&nbsp;&nbsp;S O O N</p>
-      </div>
-      {/* <button>E N T E R</button> */}
+      </div> */}
+      <button>E N T E R</button>
       <NavBar />
       <Darksun />
     </main>

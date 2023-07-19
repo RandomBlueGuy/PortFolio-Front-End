@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400&family=Rubik:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200&family=Rubik:wght@300;500&display=swap');
 
 * {
   /*COLOR PROMPTS*/
   --DarkBG: rgb(6, 21, 36);
   --NeonDarkBlue: #0b468c;
-  --NeonLightBlue: #3f97b2;
+  --NeonLightBlue: #10b8ec;
   --NeonPink: #c14493;
   /*---------------*/
   box-sizing: border-box;
