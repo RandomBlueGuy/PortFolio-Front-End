@@ -4,14 +4,15 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  aspect-ratio: 1;
 }
 
 .sun {
   position: absolute;
   display: flex;
   aspect-ratio: 1;
-  width: 50vw;
-  max-width: 400px;
+  width: 25vw;
+  /* max-width: 400px; */
   border-radius: 50%;
   background: radial-gradient(
     circle,
@@ -20,16 +21,17 @@
   );
   background-size: 100% 200%;
   background-position: bottom center;
-}
-
-.sunshine {
-  display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1;
-  width: 50vw;
-  /* height: 450px; */
-  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.sun::after{
+  content: "";
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background: radial-gradient(
     circle,
@@ -40,28 +42,28 @@
     rgb(170, 25, 90)
   );
   background-size: 150% 150%;
-  /* background-position: bottom center; */
-  filter: blur(30px);
-  animation: background-pan 15s cubic-bezier(0.57, 0.87, 0.33, 0.57) infinite;
-}
+  /* filter: blur(40px); */
+  scale: 1.1;
+  animation: background-pan 15s cubic-bezier(0.57, 0.67, 0.33, 0.57) infinite;
+} 
 
 @keyframes background-pan {
   0% {
     rotate: 0deg;
-    scale: 0.8;
+
+    filter: blur(30px);
   }
   25% {
-    /* background-position: top right; */
+    filter: blur(20px);
   }
   50% {
-    /* background-position: bottom right; */
-    scale: 0.9;
+    filter: blur(10px);
   }
   75% {
-    /* background-position: bottom left; */
+    filter: blur(20px);
   }
   100% {
     rotate: 360deg;
-    scale: 0.8;
+    filter: blur(30px);
   }
 }

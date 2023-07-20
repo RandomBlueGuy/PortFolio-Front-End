@@ -39,6 +39,7 @@ button {
   background-size: 200% 100%;
   background-position: 100% 0;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 button:hover {

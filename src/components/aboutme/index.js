@@ -1,13 +1,13 @@
 import React from "react";
-import aboutmeStyles from "./component.module.css";
+import aboutmeStyles from "./aboutme.module.css";
 
-const Darksun = () => {
+const aboutme = () => {
   return (
-    <div className={aboutmeStyles}>
+    <div className={aboutmeStyles.aboutme__ctn}>
       <h1>ABOUT ME</h1>
       <p>
         Hey there! I'm a web developer with an undying passion for the visual
-        arts. I jumped headfirst into the world of web development, with one
+        arts and the night sky. I jumped headfirst into the world of web development, with one
         reason and one reason only: to merge style, and functionality and make a
         living out of it.
       </p>
@@ -27,4 +27,4 @@ const Darksun = () => {
   );
 };
 
-export default Darksun;
+export default aboutme;
