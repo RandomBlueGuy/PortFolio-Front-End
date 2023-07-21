@@ -1,0 +1,30 @@
+.sky {
+   z-index: -3;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+
+.star {
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  opacity: 0.5;
+  animation: dis-appear linear infinite;
+}
+
+@keyframes dis-appear {
+   0% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0.3;
+   }
+   100% {
+     opacity: 1;
+   }
+ }

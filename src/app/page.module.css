@@ -11,6 +11,16 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.main p{
+  font-family: 'jost', sans-serif;
+  font-size: 35px;
+}
+
+.main button{
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
 .nav__menu{
   display: flex;
   flex-direction: column;

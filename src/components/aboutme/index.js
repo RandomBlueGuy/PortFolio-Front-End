@@ -1,7 +1,7 @@
 import React from "react";
 import aboutmeStyles from "./aboutme.module.css";
 
-const aboutme = () => {
+const AboutMe = () => {
   return (
     <div className={aboutmeStyles.aboutme__ctn}>
       <h1>ABOUT ME</h1>
@@ -27,4 +27,4 @@ const aboutme = () => {
   );
 };
 
-export default aboutme;
+export default AboutMe;
