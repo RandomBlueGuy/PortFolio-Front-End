@@ -4,6 +4,7 @@ import Darksun from "../components/darksun";
 import NavBar from "@/components/navbar";
 import AboutMe from "@/components/aboutme";
 import StarryNight from "@/components/starrynight";
+import OrbitMenu from "@/components/orbit_menu";
 
 export default function Home() {
   return (
@@ -33,12 +34,13 @@ export default function Home() {
       {/* <NavBar />
       <AboutMe />  
     */}
-      <p>W E L C O M E</p>
+      {/* <p>W E L C O M E</p>
       <p>S T R A N G E R</p>
 
-      <button>E N T E R</button>
-      <Darksun />
+      <button>E N T E R</button> */}
+      {/* <Darksun /> */}
       <StarryNight />
+      <OrbitMenu />
     </main>
   );
 }

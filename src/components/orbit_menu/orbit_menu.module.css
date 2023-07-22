@@ -1,0 +1,67 @@
+.menu__ctn{
+   position: absolute;
+
+   bottom: -15rem;
+   width: 30rem;
+   aspect-ratio: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.1s linear;
+}
+
+/* .menu__ctn:hover {
+   scale: 1.5;
+} */
+
+.orbital__general{
+   border-radius: 50%;
+   border: 3px solid var(--NeonLightBlue);
+}
+
+.orbital{
+   padding: 2rem;
+   position: relative;
+   box-sizing: border-box;
+   animation: orbit_maker 40s linear infinite;
+}
+
+.orbital::before{
+   content: "";
+   border-radius: 50%;
+   position: absolute;
+   background-color: var(--NeonLightBlue);
+   width: 1.5rem;
+   aspect-ratio: 1;
+   bottom: calc(0% - 0.75rem);
+   right: calc(50% - 0.75rem);
+}
+
+.orbital::after{
+   content: "";
+   border-radius: 50%;
+   position: absolute;
+   background-color: var(--NeonLightBlue);
+   width: 1.5rem;
+   aspect-ratio: 1;
+   top: calc(0% - 0.75rem);
+   right: calc(50% - 0.75rem);
+}
+
+@keyframes orbit_maker {
+   0%{
+      rotate: 0deg;
+   }
+
+   100%{
+      rotate: 360deg;
+   }
+}
+
+.sun{
+   width: 5vw;
+   aspect-ratio: 1;
+   background-color: var(--NeonLightBlue);
+
+
+}
