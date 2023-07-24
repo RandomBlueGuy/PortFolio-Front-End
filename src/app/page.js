@@ -5,6 +5,8 @@ import NavBar from "@/components/navbar";
 import AboutMe from "@/components/aboutme";
 import StarryNight from "@/components/starrynight";
 import OrbitMenu from "@/components/orbit_menu";
+import PostGroup from '@/components/post_group';
+import ArtsyStuff from '@/components/artsystuff_group';
 
 export default function Home() {
   return (
@@ -39,8 +41,10 @@ export default function Home() {
 
       <button>E N T E R</button> */}
       {/* <Darksun /> */}
+      <PostGroup />
       <StarryNight />
-      <OrbitMenu />
+      {/* <OrbitMenu /> */}
+      <ArtsyStuff />
     </main>
   );
 }

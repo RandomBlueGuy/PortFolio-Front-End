@@ -1,0 +1,26 @@
+.artsystuff__ctn{
+   width: 90vw;
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.art__card{
+   display: flex;
+   width: 15vw;
+   height: 30vh;
+   background-color: rgba(255, 255, 255, 0.3);
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 1rem;
+   border-top: 4px solid white;
+   border-bottom: 4px solid white;
+   clip-path: polygon(
+      4rem 0%,
+      100% 0%,
+      calc(100% - 4rem) 100%,
+      0% 100%
+    );
+    margin-right: -3rem;
+}
