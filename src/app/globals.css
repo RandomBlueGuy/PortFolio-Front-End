@@ -10,6 +10,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "jost";
 }
 
 html,
@@ -55,4 +56,8 @@ button:active{
   html {
     color-scheme: dark;
   }
+}
+
+svg{
+  width: 64px;
 }

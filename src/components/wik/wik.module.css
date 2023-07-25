@@ -1,0 +1,46 @@
+.wik__ctn {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 107, 128, 0.268);
+  font-family: "jost";
+}
+
+.wik__ctn ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.wik__ctn li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.wik__preface{
+   font-weight: 200;
+}
+
+.wik__title {
+  font-size: 70px;
+  line-height: 1;
+}
+
+.wik__subtitle {
+  line-height: 0.5;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.wik__paragraph{
+   font-size: 18px;
+   text-align: justify;
+   margin-bottom: 1.5rem;
+   max-width: 60%;
+}
