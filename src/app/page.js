@@ -8,6 +8,7 @@ import OrbitMenu from "@/components/orbit_menu";
 import PostGroup from '@/components/post_group';
 import ArtsyStuff from '@/components/artsystuff_group';
 import WhatIKnow from "@/components/wik"
+import ContactMe from "@/components/contact"
 
 export default function Home() {
   return (
@@ -46,7 +47,8 @@ export default function Home() {
       <StarryNight />
       {/* <OrbitMenu /> */}
       {/* <ArtsyStuff /> */}
-      <WhatIKnow />
+      {/* <WhatIKnow /> */}
+      <ContactMe/>
     </main>
   );
 }
