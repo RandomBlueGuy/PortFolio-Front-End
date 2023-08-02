@@ -37,21 +37,21 @@
     circle,
     rgb(25, 156, 170),
     rgb(168, 33, 178),
-    rgb(10, 36, 62),
-    rgb(170, 25, 110),
-    rgb(170, 25, 90)
+    rgba(85, 16, 122, 0.7),
+    rgb(223, 14, 136),
+    rgb(205, 13, 99)
   );
   background-size: 150% 150%;
   /* filter: blur(40px); */
   scale: 1.1;
-  animation: background-pan 15s cubic-bezier(0.57, 0.67, 0.33, 0.57) infinite;
+  animation: background-pan 10s cubic-bezier(0.57, 0.67, 0.33, 0.57) infinite;
 } 
 
 @keyframes background-pan {
   0% {
     rotate: 0deg;
 
-    filter: blur(30px);
+    filter: blur(25px);
   }
   25% {
     filter: blur(20px);
@@ -64,6 +64,6 @@
   }
   100% {
     rotate: 360deg;
-    filter: blur(30px);
+    filter: blur(25px);
   }
 }
