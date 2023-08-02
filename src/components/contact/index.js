@@ -4,6 +4,15 @@ import contactStyles from "./contact.module.css";
 function ContactMe() {
   return (
     <section className={contactStyles.contact__ctn}>
+      <h2 className={contactStyles.cntc__title}>CONTACT</h2>
+      <p className={contactStyles.cntc__subtxt}>
+        Do you have something in your mind? Want to create something together?
+      </p>
+
+      <p className={contactStyles.cntc__subtxt}>Reach me any time at...</p>
+
+
+      <div className={contactStyles.ctnc__cntr}>
       <article className={contactStyles.constellation__ctn}>
         <svg viewBox="0 0 500 500" width="500" height="500">
           <path
@@ -46,8 +55,17 @@ function ContactMe() {
             </div>
           </foreignObject>
         </svg>
-        -- Contact Section --
       </article>
+        <div className={contactStyles.ctnc__list}>
+          <li>LinkedIn</li>
+          <li>Behance</li>
+          <li>Instagram</li>
+          <li>GitHub</li>
+          <li>Email</li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
     </section>
   );
 }

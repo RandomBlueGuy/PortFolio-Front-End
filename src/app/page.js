@@ -5,14 +5,18 @@ import NavBar from "@/components/navbar";
 import AboutMe from "@/components/aboutme";
 import StarryNight from "@/components/starrynight";
 import OrbitMenu from "@/components/orbit_menu";
-import PostGroup from '@/components/post_group';
-import ArtsyStuff from '@/components/artsystuff_group';
-import WhatIKnow from "@/components/wik"
-import ContactMe from "@/components/contact"
+import PostGroup from "@/components/post_group";
+import ArtsyStuff from "@/components/artsystuff_group";
+import WhatIKnow from "@/components/wik";
+import ContactMe from "@/components/contact";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <StarryNight />
+      <p className={styles.welcome}>W E L C O M E</p>
+      <p className={styles.welcome}>S T R A N G E R</p>
+      <Darksun />
       {/* <section className={styles.nav__menu}>
         <div className={styles.portfolio__title}>
           <h1>Andres Velez</h1>
@@ -36,19 +40,15 @@ export default function Home() {
         <p>C O M I N G&nbsp;&nbsp;&nbsp;&nbsp;S O O N</p>
       </div> */}
       {/* <NavBar />
-    */}
-     {/* <AboutMe />   */}
-      {/* <p>W E L C O M E</p>
-      <p>S T R A N G E R</p>
+       */}
+      {/* <AboutMe />   */}
 
-      <button>E N T E R</button> */}
-      {/* <Darksun /> */}
       {/* <PostGroup /> */}
-      <StarryNight />
+
       {/* <OrbitMenu /> */}
       {/* <ArtsyStuff /> */}
       {/* <WhatIKnow /> */}
-      <ContactMe/>
+      {/* <ContactMe/> */}
     </main>
   );
 }
